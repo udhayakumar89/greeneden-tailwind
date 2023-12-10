@@ -16,25 +16,29 @@
         </h1>
 
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-6 h-6 md:hidden">
+            class="w-6 h-6 md:hidden cursor-pointer" id="menuicon">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
-        <ul class="flex gap-5 hover:underline hover:text-yellow-900  hidden md:flex">
-            <li>
-                <a href="#">Home</a>
-
-            </li>
-            <li>
-                <a href="product.html">Products</a>
-
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-
-            </li>
+        <ul class="flex gap-5  hidden md:flex">
+            <li> <a href="#" class="hover:underline hover:text-yellow-900">Home</a> </li>
+            <li> <a href="product.html" class="hover:underline hover:text-yellow-900">Products</a> </li>
+            <li> <a href="contact.html" class="hover:underline hover:text-yellow-900">Contact</a> </li>
         </ul>
     </nav>
+
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 100vh;  right: -50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex gap-5 flex-col  items-center ">
+            <li> <a href="./index.html" class="hover:underline hover:text-yellow-900">Home</a> </li>
+            <li> <a href="./product.html" class="hover:underline hover:text-yellow-900">Products</a> </li>
+            <li> <a href="./contact.html" class="hover:underline hover:text-yellow-900">Contact</a> </li>
+        </ul>
+    </section>
+
+
     <section class="bg-green-100 p-5 flex md:justify-around p-10">
         <div>
             <p class="mb-2 mr-5">We Offer Wide range of natural and artificial plants</p>
@@ -167,17 +171,19 @@
         </div>
     </div>
     <div class="text-center mt-5">
-        <h1 class="font-bold text-3xl">Join Our News Letter</h1> 
+        <h1 class="font-bold text-3xl">Join Our News Letter</h1>
         <p class="mb-3 mt-3">Signup for our email newspaper to get exclusive discounts, updates and more</p>
         <input type="text" class="border p-2" style="width: 80%;">
     </div>
     <div class="text-center mt-5">
-        <p class="bg-black text-white inline p-2 mt-3 underline cursor-pointer">Subscribe</p> 
+        <p class="bg-black text-white inline p-2 mt-3 underline cursor-pointer">Subscribe</p>
     </div>
     <div class="bg-green-100 p-5 mt-3">
         <h1 class="text-3xl font-bold mt-5">Greeneden</h1>
-        <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, cumque!    </p>
+        <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, cumque! </p>
         <p class="mt-5">&copy; 2021 Greeneden.com</p>
     </div>
+    <script src="index.js"></script>
 </body>
+
 </html>
